@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "install.packages(dplyr)\ntitanic3$embarked[titanic3$embarked == \"\"] <- \"S\"\ntitanic4<-titanic3\ntitanic4$age[which(is.na(titanic3$age))]<-mean(titanic3$age,na.rm=TRUE)\nmean(titanic3$age,na.rm=TRUE)\ntitanic4$boat[titanic4$boat == \"\"] <- NA\ntitanic4$has_cabin_number <- NA\ntitanic4$has_cabin_number <- ifelse(titanic4$cabin==\"\", 0, 1)\n",
+    "created" : 1467832522885.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3173942245",
+    "id" : "8CEAF5DC",
+    "lastKnownWriteTime" : 1467836556,
+    "last_content_update" : 1467836556751,
+    "path" : "~/Documents/Data wrangling exercise /Data wrangling 2/data wrangling exercise 2.1/titanic original code 2.1.R",
+    "project_path" : "titanic original code 2.1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}
